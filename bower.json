@@ -1,0 +1,20 @@
+{
+  "name": "3.2-clock",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Brent-M-Thomas/3.2-clock",
+  "authors": [
+    "Brent Thomas <brentmt24@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "reset-css": "~2.0.2011012602",
+    "neat": "~1.7.2"
+  }
+}
