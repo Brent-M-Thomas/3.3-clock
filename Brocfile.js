@@ -11,4 +11,4 @@ var includePaths = [
 
 var compiledCSS = sass(includePaths, 'app.scss', 'app.css');
 
-module.exports = merge(['public', 'bower_components', compiledCSS]);
+module.exports = merge(['public', 'bower_components', "assets", compiledCSS]);
