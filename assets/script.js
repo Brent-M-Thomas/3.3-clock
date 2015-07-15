@@ -17,5 +17,9 @@ function startTime() {
     t = setTimeout(function () {
         startTime();
     }, 500);
+console.log (h + ":" + m + ":" + s);
+console.log (((s/60)*100) + "%");
+console.log (parseInt((h + m + s), 16));
 }
 startTime();
+
