@@ -1,3 +1,5 @@
+var progressBar;
+
 function startTime() {
     var today = new Date();
     var h = today.getHours();
@@ -14,12 +16,14 @@ function startTime() {
     }
 
     document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
-    t = setTimeout(function () {
-        startTime();
-    }, 500);
-console.log (h + ":" + m + ":" + s);
-console.log (((s/60)*100) + "%");
-console.log (parseInt((h + m + s), 16));
+
+    console.log (h + ":" + m + ":" + s);
+    console.log (((s/60)*100) + "%");
+    // console.log (parseInt(h + m + s).toString(16));
+
+
 }
-startTime();
+
+
+t = window.setInterval(startTime, 500);
 

@@ -16,10 +16,12 @@ body {
     width: 100%;
     vertical-align: center;
     position:absolute;
-    top: 45%;
+    top: 40%;
     }
 
 #progress-bar {
-    border-bottom: 3px solid white;
+    position: absolute;
+    top: 54%;
+    // border-bottom: 3px solid white;
     width:100%
 }
