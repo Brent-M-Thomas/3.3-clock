@@ -15,7 +15,8 @@ function startTime() {
     if (m < 10){
         m = "0" + m;
     }
-    var pctSecond = (((ms/1000)*100) + "%");
+    var partSecond = ((ms/1000)*100);
+    var pctSecond = (partSecond + "%");
     document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
     document.getElementById("second-fraction").innerHTML = pctSecond;
 
@@ -23,6 +24,7 @@ function startTime() {
     console.log (((s/60)*100) + "%");
     console.log (parseInt(h + m + s).toString(16));
 
+document.getElementById("progress-bar").style.width="partSecond.value"px;
 
 }
 
