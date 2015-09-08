@@ -52,7 +52,6 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: blue;
   height: 100vh;
   position: relative; }
 
@@ -69,8 +68,8 @@ body {
 
 #progress-bar {
   position: absolute;
+  height: 1px;
   top: 54%;
-  left: 30%;
   border-bottom: 3px solid white; }
 
 #second-fraction {

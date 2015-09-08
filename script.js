@@ -1,4 +1,3 @@
-var progressBar;
 
 function startTime() {
     var today = new Date();
@@ -17,14 +16,18 @@ function startTime() {
     }
     var partSecond = ((ms/1000)*100);
     var pctSecond = (partSecond + "%");
+    var partMinute = ((s/60)*100);
+    var pctMinute = (partMinute + "%");
+    var hexValue = parseInt(h + m + s).toString(16);
     document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
     document.getElementById("second-fraction").innerHTML = pctSecond;
 
     console.log (h + ":" + m + ":" + s);
     console.log (((s/60)*100) + "%");
-    console.log (parseInt(h + m + s).toString(16));
+    console.log (hexValue);
 
-document.getElementById("progress-bar").style.width="partSecond.value"px;
+document.getElementById("progress-bar").style.width = pctMinute;
+document.getElementById("time").style.background = "#" + hexValue;
 
 }
 
