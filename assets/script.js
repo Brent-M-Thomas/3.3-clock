@@ -18,16 +18,20 @@ function startTime() {
     var pctSecond = (partSecond + "%");
     var partMinute = ((s/60)*100);
     var pctMinute = (partMinute + "%");
+    var color = 'rgb(' + h + ', ' + m + ', ' + s + ')';
     var hexValue = parseInt(h + m + s).toString(16);
+
     document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
     document.getElementById("second-fraction").innerHTML = pctSecond;
 
     console.log (h + ":" + m + ":" + s);
     console.log (((s/60)*100) + "%");
     console.log (hexValue);
+    console.log(color);
 
 document.getElementById("progress-bar").style.width = pctMinute;
-document.getElementById("time").style.background = "#" + hexValue;
+document.getElementById("all").style.background = color;
+
 
 }
 
